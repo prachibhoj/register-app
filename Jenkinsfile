@@ -55,9 +55,9 @@ pipeline {
                     waitForQualityGate abortPipeline: false, credentialsId: 'jenkins-sonarqube-token'
                 }	
             }
-
-        }
+       }
     }
+}
 	/*
         stage("Build & Push Docker Image") {
             steps {
@@ -113,4 +113,3 @@ pipeline {
                      mimeType: 'text/html',to: "ashfaque.s510@gmail.com"
       }      
    }*/
-}
